@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio of Pandey Aayush, Web Programming student at Gachon University.">
+<title>Pandey Aayush | Portfolio</title>
+<style>
+:root{
+  --bg:#f4f6fb; --surface:#ffffff; --text:#17213b; --muted:#3a4466;
+  --accent:#315cff; --accent-text:#ffffff; --border:#d9deef; --hero-a:#1e3a8a; --hero-b:#0891b2;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0f1424; --surface:#182036; --text:#eef1fb; --muted:#b4bcd8;
+         --accent:#7c97ff; --accent-text:#0f1424; --border:#2c3657; --hero-a:#16286a; --hero-b:#0b6b86; }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-text);padding:8px 14px;border-radius:8px;z-index:10}
+.skip:focus{left:8px}
+nav{display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:center;padding:14px 16px;background:var(--surface);border-bottom:1px solid var(--border)}
+nav a{color:var(--text);text-decoration:none;font-weight:700;padding:6px 4px}
+nav a:hover{color:var(--accent);text-decoration:underline}
+header{background:linear-gradient(120deg,var(--hero-a),var(--hero-b));color:#fff;text-align:center;padding:64px 20px}
+header .eyebrow{letter-spacing:.14em;font-size:.8rem;font-weight:700;opacity:.9}
+header h1{font-size:clamp(2rem,6vw,3.2rem);margin:10px 0}
+header p{max-width:620px;margin:0 auto;font-size:1.1rem}
+.btns{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:12px 22px;border-radius:10px;font-weight:700;text-decoration:none;background:#fff;color:#17213b}
+.btn.alt{background:transparent;color:#fff;border:2px solid #fff}
+main{max-width:980px;margin:0 auto;padding:32px 18px}
+section{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:26px;margin-bottom:24px}
+h2{margin-bottom:14px;font-size:1.5rem}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:16px}
+.fact{border:1px solid var(--border);border-radius:10px;padding:14px}
+.fact span{display:block;color:var(--muted);font-size:.85rem}
+.fact b{font-size:1.05rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{border:1px solid var(--border);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.card .tag{font-size:.78rem;font-weight:700;letter-spacing:.1em;color:var(--muted)}
+.card p{color:var(--muted);flex:1}
+.card a{font-weight:700}
+footer{text-align:center;padding:26px 16px 40px;color:var(--muted)}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main">
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <div class="eyebrow">PORTFOLIO</div>
+  <h1>Pandey Aayush</h1>
+  <p>Web Programming student at Gachon University. This site collects my coursework and projects.</p>
+  <div class="btns">
+    <a class="btn" href="#work">View my work</a>
+    <a class="btn alt" href="https://202537201-pandeyaayush.github.io/course-archive/">Course archive</a>
+  </div>
+</header>
+
+<main id="main">
+  <section id="about">
+    <h2>About me</h2>
+    <p>I’m studying web programming at Gachon University. In this course I’ve worked on HTML, CSS, JavaScript, accessibility, performance and React. Add a sentence or two here about your own interests and goals.</p>
+    <div class="facts">
+      <div class="fact"><span>Name</span><b>Pandey Aayush</b></div>
+      <div class="fact"><span>Student ID</span><b>202537201</b></div>
+      <div class="fact"><span>University</span><b>Gachon University</b></div>
+      <div class="fact"><span>Course</span><b>Web Programming (K0126_002)</b></div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>My work</h2>
+    <div class="cards">
+      <article class="card">
+        <span class="tag">WEEK 09 · TASK 01</span>
+        <h3>Accessibility Audit Report</h3>
+        <p>An accessibility audit of the Student Budget Tracker, with findings, fixes and a Lighthouse retest.</p>
+        <a href="task1.html">Open task 1 →</a>
+      </article>
+      <article class="card">
+        <span class="tag">ARCHIVE</span>
+        <h3>Web Programming course archive</h3>
+        <p>All of my weekly tasks in one place, from the early weeks through accessibility and performance.</p>
+        <a href="https://202537201-pandeyaayush.github.io/course-archive/">Open the archive →</a>
+      </article>
+      <article class="card">
+        <span class="tag">SOURCE CODE</span>
+        <h3>GitHub repository</h3>
+        <p>The code behind this portfolio and my other course projects.</p>
+        <a href="https://github.com/202537201-pandeyaayush">View my GitHub →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Find my code on <a href="https://github.com/202537201-pandeyaayush">GitHub</a>. You can add your email address here as well.</p>
+  </section>
+</main>
+
+<footer>Created by Pandey Aayush · Student ID: 202537201</footer>
+</body>
+</html>
